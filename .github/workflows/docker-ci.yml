@@ -10,24 +10,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-<<<<<<< HEAD
-      - uses: actions/checkout@v4
-=======
       - name: Checkout Code
         uses: actions/checkout@v4
->>>>>>> d87a781 (Test GitHub Action)
 
       - name: Verify Project Files
         run: ls -la
 
       - name: Build Docker Image
         run: docker build -t ci-cd-demo .
-<<<<<<< HEAD
-=======
-
-      - name: Validate Docker Image
-        run: docker images
->>>>>>> d87a781 (Test GitHub Action)
 
       - name: Validate Docker Image
         run: docker images
